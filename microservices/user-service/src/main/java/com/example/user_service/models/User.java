@@ -2,9 +2,15 @@ package com.example.user_service.models;
 
 import com.example.user_service.enums.Role;
 import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Table(name = "user")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +27,5 @@ public class User {
 
     @Column(name = "role", nullable = false)
     private Role role;
-
 
 }
