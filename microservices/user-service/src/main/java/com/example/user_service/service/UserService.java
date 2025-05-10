@@ -3,24 +3,26 @@ package com.example.user_service.service;
 import com.example.user_service.models.User;
 import com.example.user_service.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 public class UserService {
-    private final UserRepository userRepository;
+    @Autowired
+    private UserRepository userRepository;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
-//    public UserService(UserRepository userRepository) {
-//        this.userRepository = userRepository;
-//    }
-
-    public void saveUser(User user){
-        userRepository.save(user);
+    public List<User> listAllUsers(){
+        return new ArrayList<>(userRepository.findAll());
     }
 
-    public List<User> findAllUsers(){
-        return userRepository.findAll();
+    public void deleteUser(Long id){
+        userRepository.deleteById(id);
     }
 }
