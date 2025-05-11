@@ -1,0 +1,37 @@
+server:
+  port: 8081
+
+  logging:
+    file:
+      name: logs/app.log
+    level:
+      root: INFO
+      com.example.user_service.service: DEBUG
+
+
+spring:
+  application:
+    name: user-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/lost_found
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    eureka:
+      client:
+        service-url:
+          defaultZone: http://localhost:8761/eureka
+
+      mvc:
+        static-path-pattern: /static/**

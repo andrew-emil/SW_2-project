@@ -4,6 +4,7 @@ import com.example.lost_found_item_service.dtos.AddItemDto;
 import com.example.lost_found_item_service.enums.ItemType;
 import com.example.lost_found_item_service.model.LostFoundItemModel;
 import com.example.lost_found_item_service.repository.LostFoundItemRepository;
+import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,7 +24,7 @@ public class LostFoundItemService {
     }
 
     public void addItem(AddItemDto addItemDto, Long userId){
-        LostFoundItemModel item = LostFoundItemModel.builer()
+        LostFoundItemModel item = LostFoundItemModel.builder()
                 .type(ItemType.LOST)
                 .name(addItemDto.getName())
                 .lostFoundDate(addItemDto.getDate())
