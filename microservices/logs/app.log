@@ -1,0 +1,98 @@
+2025-05-11 21:33:39.229 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-05-11 21:33:39.233 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=user-service, profiles=[default], label=null, version=null, state=null
+2025-05-11 21:33:39.291 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - Failed to create converter for [%clr] keyword
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at com.example.user_service.UserServiceApplication.main(UserServiceApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@69940219 - Failed to create converter for [%clr] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:291)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:269)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:81)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:197)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 22 common frames omitted
+2025-05-11 21:37:14.251 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 16720 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-11 21:37:14.253 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-11 21:37:14.255 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-11 21:37:24.113 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2025-05-11 21:37:30.443 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 19.773 seconds (process running for 22.006)
+2025-05-11 21:37:53.348 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 18348 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-11 21:37:53.352 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-11 21:37:53.355 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-11 21:38:03.119 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2025-05-11 21:38:09.565 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 19.785 seconds (process running for 22.097)
+2025-05-11 21:38:53.849 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 3632 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-11 21:38:53.853 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-11 21:38:53.854 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-11 21:39:04.335 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2025-05-11 21:39:10.866 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 20.56 seconds (process running for 22.827)
+2025-05-11 21:40:04.605 [http-nio-8081-exec-1] INFO  c.e.u.logging.LoggingAspect - >> Start: String com.example.user_service.service.AuthService.login(LoginDto)
+2025-05-11 21:40:04.608 [http-nio-8081-exec-1] INFO  c.e.u.logging.LoggingAspect - Entering: String com.example.user_service.service.AuthService.login(LoginDto)
+2025-05-11 21:40:05.264 [http-nio-8081-exec-1] INFO  c.e.u.logging.LoggingAspect - >> Start: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
+2025-05-11 21:40:05.265 [http-nio-8081-exec-1] INFO  c.e.u.logging.LoggingAspect - Entering: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
+2025-05-11 21:40:05.273 [http-nio-8081-exec-1] INFO  c.e.u.logging.LoggingAspect - Exiting: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String) returned org.springframework.security.core.userdetails.User [Username=andrewemil@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]]
+2025-05-11 21:40:05.273 [http-nio-8081-exec-1] INFO  c.e.u.logging.LoggingAspect - << End: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
+2025-05-11 21:40:05.422 [http-nio-8081-exec-1] INFO  c.e.u.logging.LoggingAspect - Exiting: String com.example.user_service.service.AuthService.login(LoginDto) returned eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmRyZXdlbWlsQGdtYWlsLmNvbSIsImlhdCI6MTc0Njk4ODgwNSwiZXhwIjoxNzQ3MDc1MjA1fQ.1FhZo8CVQBgTStfm_SJpm9_cjFtCvKhbc9Y8Yf6Uzyo
+2025-05-11 21:40:05.422 [http-nio-8081-exec-1] INFO  c.e.u.logging.LoggingAspect - << End: String com.example.user_service.service.AuthService.login(LoginDto)
+2025-05-11 21:40:33.373 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - >> Start: void com.example.user_service.service.AuthService.register(RegisterDto)
+2025-05-11 21:40:33.374 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - Entering: void com.example.user_service.service.AuthService.register(RegisterDto)
+2025-05-11 21:40:33.618 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - Exiting: void com.example.user_service.service.AuthService.register(RegisterDto) returned null
+2025-05-11 21:40:33.618 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - << End: void com.example.user_service.service.AuthService.register(RegisterDto)
+2025-05-11 21:51:30.561 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 16008 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-11 21:51:30.566 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-11 21:51:30.567 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-11 21:51:51.983 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 25.693 seconds (process running for 27.581)
+2025-05-11 21:51:59.854 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long)
+2025-05-11 21:51:59.860 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long)
+2025-05-11 21:52:00.510 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long) returned [com.example.lost_found_item_service.model.LostFoundItemModel@311e112d]
+2025-05-11 21:52:00.512 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long)
+2025-05-11 21:53:01.154 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - >> Start: void com.example.lost_found_item_service.service.LostFoundItemService.addItem(AddItemDto,Long)
+2025-05-11 21:53:01.155 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - Entering: void com.example.lost_found_item_service.service.LostFoundItemService.addItem(AddItemDto,Long)
+2025-05-11 21:53:01.323 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - Exiting: void com.example.lost_found_item_service.service.LostFoundItemService.addItem(AddItemDto,Long) returned null
+2025-05-11 21:53:01.324 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - << End: void com.example.lost_found_item_service.service.LostFoundItemService.addItem(AddItemDto,Long)
+2025-05-11 21:53:09.814 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-11 21:53:09.815 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-11 21:53:09.835 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@33c49598, com.example.lost_found_item_service.model.LostFoundItemModel@5e8131a2]
+2025-05-11 21:53:09.837 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-11 21:53:14.970 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long)
+2025-05-11 21:53:14.970 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long)
+2025-05-11 21:53:14.976 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long) returned [com.example.lost_found_item_service.model.LostFoundItemModel@30bd34d1, com.example.lost_found_item_service.model.LostFoundItemModel@2de5eebc]
+2025-05-11 21:53:14.976 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long)

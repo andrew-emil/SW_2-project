@@ -18,34 +18,34 @@ public class LostFoundController {
     @Autowired
     private LostFoundItemService service;
 
-    @GetMapping("/list-all-items")
+    @GetMapping
     public ResponseEntity<List<LostFoundItemModel>> listAllItems(){
         return ResponseEntity.ok(service.listAllItems());
     }
 
-    @PostMapping("/add-item")
+    @PostMapping
     public ResponseEntity<String> addItem(@RequestBody AddItemDto item, @RequestParam long userId) {
         service.addItem(item, userId);
         return ResponseEntity.ok("Item added successfully");
     }
-    @PostMapping("/list-owner-items")
-    public ResponseEntity<List<LostFoundItemModel>> listOwnerLostItems(@RequestBody Long userId) {
+    @GetMapping("/{userId}")
+    public ResponseEntity<List<LostFoundItemModel>> listOwnerLostItems(@PathVariable Long userId) {
         return  ResponseEntity.ok(service.listOwnerLostItems(userId));
     }
-    @PostMapping("/update-item")
-    public ResponseEntity<String> updatItem(@RequestBody Long id) {
-        if (service.updateItem(id)){
+    @PutMapping("/{itemId}")
+    public ResponseEntity<String> updateItem(@PathVariable Long itemId) {
+        if (service.updateItem(itemId)){
             return ResponseEntity.ok("Item Updated Successfully");
         }
         return ResponseEntity.ok("There is something went wrong");
     }
-    @PostMapping("get-item")
-    public ResponseEntity<Optional<LostFoundItemModel>> getItem(long id){
-        return ResponseEntity.ok(service.getItem(id));
+    @GetMapping("/item/{itemId}")
+    public ResponseEntity<Optional<LostFoundItemModel>> getItem(@PathVariable Long itemId){
+        return ResponseEntity.ok(service.getItem(itemId));
     }
-    @PostMapping("delete-item")
-    public ResponseEntity<String> deleteItem(long id){
-        service.deleteItem(id);
+    @DeleteMapping("/{itemId}")
+    public ResponseEntity<String> deleteItem(@PathVariable Long itemId){
+        service.deleteItem(itemId);
         return ResponseEntity.ok("Item Deleted Successfully");
     }
 }

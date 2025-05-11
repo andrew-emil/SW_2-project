@@ -3,7 +3,7 @@ server:
 
   logging:
     file:
-      name: logs/app.log
+      name: logs/items.log
     level:
       root: INFO
       com.example.user_service.service: DEBUG
@@ -12,9 +12,11 @@ server:
 spring:
   application:
     name: lost-found-item-service
+  main:
+    allow-bean-definition-overriding: true
 
   datasource:
-    url: jdbc:mysql://localhost:3306/lost_found
+    url: jdbc:mysql://localhost:3306/lost&found
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
