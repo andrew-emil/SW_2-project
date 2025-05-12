@@ -6,7 +6,6 @@ server:
       name: logs/items.log
     level:
       root: INFO
-      com.example.user_service.service: DEBUG
 
 
 spring:

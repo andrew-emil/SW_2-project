@@ -32,6 +32,7 @@ public class LostFoundController {
     public ResponseEntity<List<LostFoundItemModel>> listOwnerLostItems(@PathVariable Long userId) {
         return  ResponseEntity.ok(service.listOwnerLostItems(userId));
     }
+
     @PutMapping("/{itemId}")
     public ResponseEntity<String> updateItem(@PathVariable Long itemId) {
         if (service.updateItem(itemId)){
@@ -39,10 +40,12 @@ public class LostFoundController {
         }
         return ResponseEntity.ok("There is something went wrong");
     }
+
     @GetMapping("/item/{itemId}")
     public ResponseEntity<Optional<LostFoundItemModel>> getItem(@PathVariable Long itemId){
         return ResponseEntity.ok(service.getItem(itemId));
     }
+
     @DeleteMapping("/{itemId}")
     public ResponseEntity<String> deleteItem(@PathVariable Long itemId){
         service.deleteItem(itemId);

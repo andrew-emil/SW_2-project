@@ -5,27 +5,19 @@ import com.example.user_service.dtos.RegisterDto;
 import com.example.user_service.enums.Role;
 import com.example.user_service.models.User;
 import com.example.user_service.repository.UserRepository;
-import com.example.user_service.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
 public class AuthService {
     @Autowired
-    private final UserRepository userRepository;
+    private UserRepository userRepository;
     @Autowired
-    private final PasswordEncoder passwordEncoder;
-    @Autowired
-    private final CustomUserDetailsService customUserDetailsService;
-    @Autowired
-    private final JwtUtil jwtUtil;
+    private PasswordEncoder passwordEncoder;
 
 
     public void register(RegisterDto registerDto){
@@ -33,11 +25,11 @@ public class AuthService {
         user.setUsername(registerDto.getUsername());
         user.setEmail(registerDto.getEmail());
         user.setPassword(passwordEncoder.encode(registerDto.getPassword()));
-        user.setRole(Role.STUDENT);
+        user.setRole(Role.USER);
         userRepository.save(user);
     }
 
-    public String login(LoginDto loginDto) {
+    public User login(LoginDto loginDto) {
         User user = userRepository.findByEmail(loginDto.getEmail())
                 .orElseThrow(() -> new BadCredentialsException("Invalid credentials"));
 
@@ -45,7 +37,6 @@ public class AuthService {
             throw new BadCredentialsException("Invalid credentials");
         }
 
-        UserDetails userDetails = customUserDetailsService.loadUserByUsername(loginDto.getEmail());
-        return jwtUtil.generateToken(userDetails);
+        return user;
     }
 }
