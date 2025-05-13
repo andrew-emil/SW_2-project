@@ -1,32 +1,5 @@
-server:
-  port: 8222
-
-eureka:
-  client:
-    register-with-eureka: false
-
 spring:
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-        - id: user
-          uri: http://localhost:8081
-          predicates:
-            -path=/api/auth/**
-            -path=/api/users/**
-
-        - id: lostItems
-          uri: http://localhost:8082
-          predicates:
-            -path=/api/LostFound/**
-          filters:
-            - PreserveHostHeader
-            - AddRequestHeader=Authorization
-
   application:
-    name: gateway
+    name: gateway-server
   config:
     import: optional:configserver:http://localhost:8888

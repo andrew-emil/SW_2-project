@@ -6,6 +6,8 @@ eureka:
     register-with-eureka: false
 
 spring:
+  application:
+    name: gateway-server
   cloud:
     gateway:
       discovery:
@@ -15,18 +17,20 @@ spring:
         - id: user
           uri: http://localhost:8081
           predicates:
-            -path=/api/auth/**
-            -path=/api/users/**
+            - Path=/api/auth/**
+            - Path=/api/users/**
 
         - id: lostItems
           uri: http://localhost:8082
           predicates:
-            -path=/api/LostFound/**
+            - Path=/api/LostFound/**
           filters:
             - PreserveHostHeader
-            - AddRequestHeader=Authorization
+#            - AddRequestHeader=Authorization, #{token} # Optional: you might want to replace this with a value
 
-  application:
-    name: gateway
-  config:
-    import: optional:configserver:http://localhost:8888
+management:
+  server:
+    port: 8222
+  tracing:
+    sampling:
+      probability: 1.0
