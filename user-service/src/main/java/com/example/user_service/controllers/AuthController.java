@@ -2,11 +2,14 @@ package com.example.user_service.controllers;
 
 import com.example.user_service.dtos.LoginDto;
 import com.example.user_service.dtos.RegisterDto;
+import com.example.user_service.models.User;
 import com.example.user_service.service.AuthService;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,19 +22,23 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/auth")
+@RequiredArgsConstructor
 public class AuthController {
+
     @Autowired
-    private AuthService authService;
+    private final AuthService authService;
+    @Autowired
+    private final UserDetailsService userDetailsService;
 
     @PostMapping("/register")
     public ResponseEntity<?> register(@Valid @RequestBody RegisterDto registerDto,
-                                      BindingResult bindingResult){
-        if(bindingResult.hasErrors()){
+                                      BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
             Map<String, String> errors = bindingResult.getFieldErrors()
                     .stream()
                     .collect(Collectors.toMap(
-                       FieldError::getField,
-                       FieldError::getDefaultMessage
+                            FieldError::getField,
+                            FieldError::getDefaultMessage
                     ));
             return ResponseEntity.badRequest().body(errors);
         }
@@ -42,8 +49,8 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@Valid @RequestBody LoginDto loginDto,
-                                   BindingResult bindingResult){
-        if(bindingResult.hasErrors()){
+                                   BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
             Map<String, String> errors = bindingResult.getFieldErrors()
                     .stream()
                     .collect(Collectors.toMap(
@@ -52,10 +59,12 @@ public class AuthController {
                     ));
             return ResponseEntity.badRequest().body(errors);
         }
-        try{
-            String token = authService.login(loginDto);
-            return ResponseEntity.ok().body(Map.of("token", token));
-        }catch (BadCredentialsException e){
+
+        try {
+        final User user = authService.login(loginDto);
+        return ResponseEntity.ok(user);
+
+        } catch (BadCredentialsException e) {
             return ResponseEntity.badRequest().body("Invalid credentials");
         }
     }
