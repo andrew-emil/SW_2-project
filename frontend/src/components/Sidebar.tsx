@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import type { RoleEnum } from "../types/RoleEnum";
+import { useAuth } from "../context/contextProvider";
 
 interface SidebarProps {
 	username: string | undefined;
@@ -8,6 +9,19 @@ interface SidebarProps {
 }
 
 function Sidebar({ username, role }: SidebarProps) {
+	const { setUser, setToken } = useAuth();
+
+	const logout = () => {
+		setUser(null);
+		setToken(null);
+		
+	};
+
+
+
+
+
+
 	
 	return (
 		<div className="col-auto col-md-3 col-xl-2 px-sm-2" id="sidebar">
@@ -69,6 +83,12 @@ function Sidebar({ username, role }: SidebarProps) {
 							</Link>
 						</li>
 					)}
+					<li>
+							<button onClick={logout} className="nav-link px-0 align-middle">
+								<i className="fs-4 bi-people"></i>
+								<span className="ms-1 d-none d-sm-inline">logout</span>
+							</button>
+					</li>
 				</ul>
 			</div>
 		</div>

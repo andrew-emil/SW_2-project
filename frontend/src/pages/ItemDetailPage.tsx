@@ -20,6 +20,8 @@ export default function ItemDetailPage() {
 	const [item, setItem] = useState<LostFoundItem | null>(null);
 	const [loading, setLoading] = useState<boolean>(true);
 	const [error, setError] = useState<string | null>(null);
+	const apiUrl = import.meta.env.VITE_LOST_FOUND_API as string;
+
 
 	useEffect(() => {
 		if (!id) {
@@ -27,10 +29,10 @@ export default function ItemDetailPage() {
 			setLoading(false);
 			return;
 		}
-
 		const fetchItem = async () => {
+			
 			try {
-				const resp = await axios.get<LostFoundItem>(`/api/lostfound/${id}`);
+				const resp = await axios.get<LostFoundItem>(`${apiUrl}/item/${id}`);
 				setItem(resp.data);
 			} catch (err: any) {
 				setError(
@@ -42,7 +44,7 @@ export default function ItemDetailPage() {
 		};
 
 		fetchItem();
-	}, [id]);
+	}, []);
 
 	return (
 		<div className="d-flex">

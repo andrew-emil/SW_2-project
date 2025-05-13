@@ -21,7 +21,7 @@ function Home() {
 		const fetchItems = async () => {
 			const apiUrl = import.meta.env.VITE_LOST_FOUND_API as string;
 			try {
-				const res = await fetch(`${apiUrl}/lostfound/${user?.id}`);
+				const res = await fetch(`${apiUrl}`);
 				if (!res.ok) throw new Error(`Server error: ${res.status}`);
 				const data: LostFoundItem[] = await res.json();
 				setItems(data);
