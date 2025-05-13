@@ -17,11 +17,7 @@ spring:
         - id: user
           uri: http://localhost:8081
           predicates:
-<<<<<<< HEAD
             - Path=/api/auth/**, /api/users/**
-=======
-            - Path=/api/auth/** , /api/users/**
->>>>>>> d27a815fd657b276f6daa433f001162d68af3607
 
         - id: lostItems
           uri: http://localhost:8082

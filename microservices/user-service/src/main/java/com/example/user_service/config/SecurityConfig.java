@@ -1,6 +1,7 @@
 package com.example.user_service.config;
 
 import com.example.user_service.service.CustomUserDetailsService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.*;
@@ -35,10 +36,11 @@ public class SecurityConfig {
         return authBuilder.build();
     }
 
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http,
                                            JwtAuthFilter jwtAuthFilter,
-                                           CorsConfigurationSource corsSource) throws Exception {
+                                           @Qualifier("corsConfigurationSource") CorsConfigurationSource corsSource) throws Exception {
         http
                 .csrf(csrf -> csrf.disable())
                 .cors(cors -> cors.configurationSource(corsSource))
