@@ -1,291 +1,127 @@
-2025-05-12 16:14:52.962 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 10084 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 16:14:53.065 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 16:14:53.066 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 16:20:02.711 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 18356 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 16:20:02.715 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 16:20:02.717 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 16:22:51.372 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 11568 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 16:22:51.375 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 16:22:51.376 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 16:25:16.805 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 412 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 16:25:16.808 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 16:25:16.809 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 16:29:24.377 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 11368 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 16:29:24.381 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 16:29:24.383 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 16:29:36.067 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 16:35:43.619 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 17132 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 16:35:43.622 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 16:35:43.623 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 16:35:54.209 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 16:39:59.856 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 19164 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 16:39:59.859 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 16:39:59.861 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 16:40:10.901 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 16:40:27.103 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 31.282 seconds (process running for 34.527)
-2025-05-12 16:40:36.719 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 16:40:36.722 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 16:40:37.539 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 16:40:37.550 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 16:40:37.568 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String) returned com.example.user_service.service.CustomUserDetails@6a642a0
-2025-05-12 16:40:37.568 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 16:40:37.894 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: String com.example.user_service.service.AuthService.login(LoginDto) returned eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MjcsInVzZXJuYW1lIjoiYW5kcmV3Iiwic3ViIjoiYW5kcmV3ZW1pbEBnbWFpbC5jb20iLCJpYXQiOjE3NDcwNTcyMzcsImV4cCI6MTc0NzE0MzYzN30.DfSsgC65ue8ReC_v2JUXK9T-WwdMK_m0t2U19xTSNWg
-2025-05-12 16:40:37.895 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 16:41:09.930 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - >> Start: void com.example.user_service.service.AuthService.register(RegisterDto)
-2025-05-12 16:41:09.930 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - Entering: void com.example.user_service.service.AuthService.register(RegisterDto)
-2025-05-12 16:41:58.721 [http-nio-8081-exec-4] INFO  c.e.u.logging.LoggingAspect - >> Start: void com.example.user_service.service.AuthService.register(RegisterDto)
-2025-05-12 16:41:58.721 [http-nio-8081-exec-4] INFO  c.e.u.logging.LoggingAspect - Entering: void com.example.user_service.service.AuthService.register(RegisterDto)
-2025-05-12 16:41:58.958 [http-nio-8081-exec-4] INFO  c.e.u.logging.LoggingAspect - Exiting: void com.example.user_service.service.AuthService.register(RegisterDto) returned null
-2025-05-12 16:41:58.958 [http-nio-8081-exec-4] INFO  c.e.u.logging.LoggingAspect - << End: void com.example.user_service.service.AuthService.register(RegisterDto)
-2025-05-12 16:45:31.875 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 18536 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 16:45:31.892 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 16:45:31.894 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 16:45:43.125 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 16:46:07.387 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 40.623 seconds (process running for 44.434)
-2025-05-12 16:46:27.286 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 16:46:27.290 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 16:46:27.987 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 16:46:27.988 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 16:46:28.012 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String) returned com.example.user_service.service.CustomUserDetails@68c48484
-2025-05-12 16:46:28.013 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 16:46:28.384 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: String com.example.user_service.service.AuthService.login(LoginDto) returned eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJpZCI6MjcsInVzZXJuYW1lIjoiYW5kcmV3Iiwic3ViIjoiYW5kcmV3ZW1pbEBnbWFpbC5jb20iLCJpYXQiOjE3NDcwNTc1ODgsImV4cCI6MTc0NzE0Mzk4OH0.yzksHqMEwMLQ8rIwqQLzzMqyuQKukKQ6z4FtML4yoW0
-2025-05-12 16:46:28.385 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 16:51:49.004 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 10704 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 16:51:49.007 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 16:51:49.009 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 16:51:58.412 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 16:52:14.888 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 30.953 seconds (process running for 34.445)
-2025-05-12 16:52:24.393 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 16:52:24.407 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 16:52:26.256 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 16:52:26.258 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 16:52:26.307 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String) returned com.example.user_service.service.CustomUserDetails@5cfa0c35
-2025-05-12 16:52:26.308 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 16:52:26.650 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: String com.example.user_service.service.AuthService.login(LoginDto) returned eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9BRE1JTiIsImlkIjoyNywidXNlcm5hbWUiOiJhbmRyZXciLCJzdWIiOiJhbmRyZXdlbWlsQGdtYWlsLmNvbSIsImlhdCI6MTc0NzA1Nzk0NiwiZXhwIjoxNzQ3MTQ0MzQ2fQ.ipKLNpsRXL3cF0E16vycOk1sy3fSGYJ5UqGF_px6YK0
-2025-05-12 16:52:26.650 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:00:15.208 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 18276 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 17:00:15.213 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 17:00:15.214 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 17:00:25.401 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 17:00:43.589 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 33.096 seconds (process running for 37.286)
-2025-05-12 17:02:56.834 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 18216 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 17:02:56.837 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 17:02:56.839 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 17:03:08.230 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 17:03:24.870 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 32.63 seconds (process running for 36.002)
-2025-05-12 17:03:42.491 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:03:42.497 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:03:44.003 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:03:44.013 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:03:44.040 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String) returned com.example.user_service.service.CustomUserDetails@1c7216db
-2025-05-12 17:03:44.041 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:03:44.339 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: String com.example.user_service.service.AuthService.login(LoginDto) returned eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9BRE1JTiIsImlkIjoyNywidXNlcm5hbWUiOiJhbmRyZXciLCJzdWIiOiJhbmRyZXdlbWlsQGdtYWlsLmNvbSIsImlhdCI6MTc0NzA1ODYyNCwiZXhwIjoxNzQ3MTQ1MDI0fQ.LuziicxASbFwEVixYBs5RB8988phHhjtBaiViVxFkIU
-2025-05-12 17:03:44.340 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:05:54.938 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 3280 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 17:05:54.941 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 17:05:54.942 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 17:06:05.006 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 17:06:24.481 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 34.063 seconds (process running for 37.852)
-2025-05-12 17:06:37.837 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - >> Start: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:06:37.842 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - Entering: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:06:39.540 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - >> Start: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:06:39.541 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - Entering: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:06:39.564 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - Exiting: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String) returned com.example.user_service.service.CustomUserDetails@3a8c7d93
-2025-05-12 17:06:39.564 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - << End: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:06:39.826 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - Exiting: String com.example.user_service.service.AuthService.login(LoginDto) returned eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9BRE1JTiIsImlkIjoyNywidXNlcm5hbWUiOiJhbmRyZXciLCJzdWIiOiJhbmRyZXdlbWlsQGdtYWlsLmNvbSIsImlhdCI6MTc0NzA1ODc5OSwiZXhwIjoxNzQ3MTQ1MTk5fQ.VUS3n1AqMLZXFZp-HsS_2eTjxyvqRsDNkuaSzmXtklY
-2025-05-12 17:06:39.827 [http-nio-8081-exec-3] INFO  c.e.u.logging.LoggingAspect - << End: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:08:38.225 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 6000 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 17:08:38.228 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 17:08:38.229 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 17:08:49.354 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 17:09:04.794 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 31.438 seconds (process running for 34.814)
-2025-05-12 17:11:31.857 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 17772 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 17:11:31.861 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 17:11:31.863 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 17:11:42.052 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 17:11:58.120 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 30.258 seconds (process running for 33.705)
-2025-05-12 17:14:11.945 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 16656 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 17:14:11.985 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 17:14:11.988 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 17:14:22.873 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 17:14:40.139 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 33.115 seconds (process running for 36.735)
-2025-05-12 17:18:24.682 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 6240 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 17:18:24.685 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 17:18:24.687 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 17:18:35.614 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 17:18:51.949 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 31.489 seconds (process running for 34.425)
-2025-05-12 17:19:09.642 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:19:09.664 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:19:10.475 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:19:10.475 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:19:10.490 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String) returned com.example.user_service.service.CustomUserDetails@5c08ccb7
-2025-05-12 17:19:10.490 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:19:10.776 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: String com.example.user_service.service.AuthService.login(LoginDto) returned eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJpZCI6MjcsInVzZXJuYW1lIjoiYW5kcmV3Iiwic3ViIjoiYW5kcmV3ZW1pbEBnbWFpbC5jb20iLCJpYXQiOjE3NDcwNTk1NTAsImV4cCI6MTc0NzE0NTk1MH0.Rq_GijFlgTfEDx8OsqAUWfD-fHstI5ROTKmfvwXwY9M
-2025-05-12 17:19:10.777 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:35:21.548 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 6860 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 17:35:21.551 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 17:35:21.552 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 17:35:31.363 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 17:35:46.836 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 30.395 seconds (process running for 34.581)
-2025-05-12 17:36:05.822 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:36:05.824 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:36:06.897 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:36:06.897 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:36:06.939 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String) returned com.example.user_service.service.CustomUserDetails@91a69a8
-2025-05-12 17:36:06.940 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 17:36:07.223 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Exiting: String com.example.user_service.service.AuthService.login(LoginDto) returned eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjpbeyJhdXRob3JpdHkiOiJBRE1JTiJ9XSwiaWQiOjI3LCJ1c2VybmFtZSI6ImFuZHJldyIsInN1YiI6ImFuZHJld2VtaWxAZ21haWwuY29tIiwiaWF0IjoxNzQ3MDYwNTY3LCJleHAiOjE3NDcxNDY5Njd9.POhjfvK_nlAjCeDV_TnR0rYz4wH7BFDwX7uivH-hFYY
-2025-05-12 17:36:07.223 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - << End: String com.example.user_service.service.AuthService.login(LoginDto)
-2025-05-12 17:38:27.216 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 15284 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 17:38:27.219 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 17:38:27.221 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 17:38:37.524 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 17:38:59.146 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 36.123 seconds (process running for 40.1)
-2025-05-12 19:32:24.268 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 16992 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 19:32:24.271 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 19:32:24.272 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 19:32:35.351 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 19:34:35.337 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 11648 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 19:34:35.339 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 19:34:35.340 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 19:34:46.157 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 19:38:54.806 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 15224 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 19:38:54.810 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 19:38:54.811 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 19:39:06.810 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 19:44:31.765 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 9348 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 19:44:31.768 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 19:44:31.770 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 19:44:52.950 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 19:45:06.279 [restartedMain] INFO  c.e.u.UserServiceApplication - Started UserServiceApplication in 39.129 seconds (process running for 42.828)
-2025-05-12 19:45:22.757 [http-nio-8081-exec-2] WARN  c.e.u.config.JwtAuthFilter - Invalid JWT structure
-2025-05-12 19:45:23.530 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - >> Start: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 19:45:23.536 [http-nio-8081-exec-2] INFO  c.e.u.logging.LoggingAspect - Entering: UserDetails com.example.user_service.service.CustomUserDetailsService.loadUserByUsername(String)
-2025-05-12 19:52:53.163 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 4888 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 19:52:53.168 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 19:52:53.169 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 19:53:22.539 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 19:57:38.383 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 16496 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 19:57:38.386 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 19:57:38.387 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 19:58:05.507 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 20:08:53.027 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 9928 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:08:53.030 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:08:53.031 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:10:17.572 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 20:12:44.587 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 20232 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:12:44.591 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:12:44.592 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:12:53.964 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 20:18:31.988 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 19356 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:18:31.992 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:18:31.993 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:18:52.274 [restartedMain] DEBUG c.e.u.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
-2025-05-12 20:31:02.336 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 15592 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:31:02.363 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:31:02.364 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:32:31.276 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 11936 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:32:31.279 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:32:31.280 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:38:19.791 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 8728 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:38:19.854 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:38:19.855 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:44:49.581 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 15076 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:44:49.585 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:44:49.586 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:48:55.284 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 13820 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:48:55.287 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:48:55.288 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:50:23.882 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 15528 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:50:23.885 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:50:23.887 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:53:05.627 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 15632 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:53:05.651 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:53:05.653 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:53:42.191 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 41.943 seconds (process running for 46.482)
-2025-05-12 20:54:04.587 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
-2025-05-12 20:54:04.591 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
-2025-05-12 20:54:05.255 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@16072bbf, com.example.lost_found_item_service.model.LostFoundItemModel@4acd0b2]
-2025-05-12 20:54:05.256 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
-2025-05-12 20:54:30.293 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 15632 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:54:30.294 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:54:30.294 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:54:44.736 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 18940 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:54:44.743 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:54:44.745 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 20:54:55.075 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 25.195 seconds (process running for 119.365)
-2025-05-12 20:57:44.841 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 14556 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 20:57:44.844 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 20:57:44.845 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:00:10.053 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
-2025-05-12 21:00:10.054 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
-2025-05-12 21:00:10.179 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@ff3e4cc, com.example.lost_found_item_service.model.LostFoundItemModel@12325862]
-2025-05-12 21:00:10.179 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
-2025-05-12 21:02:20.798 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 15632 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:02:20.798 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:02:20.798 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:02:27.849 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 7.655 seconds (process running for 572.139)
-2025-05-12 21:03:08.648 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 15632 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:03:08.649 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:03:08.650 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:03:17.692 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 19572 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:03:17.725 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:03:17.726 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:06:14.496 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 15324 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:06:14.505 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:06:14.506 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:09:19.569 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 8428 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:09:19.572 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:09:19.574 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:09:52.229 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 37.319 seconds (process running for 40.615)
-2025-05-12 21:10:31.867 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
-2025-05-12 21:10:31.871 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
-2025-05-12 21:10:32.794 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@19b0a4e7, com.example.lost_found_item_service.model.LostFoundItemModel@2d4c34df]
-2025-05-12 21:10:32.795 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
-2025-05-12 21:10:37.205 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 11364 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:10:37.209 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:10:37.210 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:15:25.228 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 8428 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:15:25.228 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:15:25.228 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:15:38.536 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 13.844 seconds (process running for 386.922)
-2025-05-12 21:15:43.259 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 8428 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:15:43.260 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:15:43.260 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:15:50.718 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 7.953 seconds (process running for 399.105)
-2025-05-12 21:16:44.842 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 8428 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:16:44.842 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:16:44.842 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:16:50.327 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 5.726 seconds (process running for 458.713)
-2025-05-12 21:16:55.186 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 8428 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:16:55.188 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:16:55.188 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:17:00.125 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 5.142 seconds (process running for 468.512)
-2025-05-12 21:17:04.718 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 8428 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:17:04.718 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:17:04.719 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:17:09.451 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 4.915 seconds (process running for 477.837)
-2025-05-12 21:17:33.151 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 11260 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:17:33.154 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:17:33.155 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:20:00.057 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 19304 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:20:00.060 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:20:00.061 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:24:15.567 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 8428 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:24:15.567 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:24:15.567 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:24:19.627 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 4.277 seconds (process running for 908.014)
-2025-05-12 21:24:24.156 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 8428 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:24:24.156 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:24:24.156 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:24:29.414 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 5.473 seconds (process running for 917.8)
-2025-05-12 21:25:26.593 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 8428 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:25:26.593 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:25:26.593 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:25:31.214 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 4.921 seconds (process running for 979.601)
-2025-05-12 21:25:35.668 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 8428 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:25:35.669 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:25:35.669 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-12 21:25:45.654 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 10.196 seconds (process running for 994.04)
-2025-05-12 21:25:55.988 [restartedMain] INFO  c.e.u.UserServiceApplication - Starting UserServiceApplication using Java 21.0.7 with PID 20096 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\user-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
-2025-05-12 21:25:55.991 [restartedMain] DEBUG c.e.u.UserServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
-2025-05-12 21:25:55.992 [restartedMain] INFO  c.e.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 15:45:43.366 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 1804 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-13 15:45:43.387 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-13 15:45:43.388 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 15:51:12.959 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 11516 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-13 15:51:12.968 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-13 15:51:12.970 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 15:53:10.795 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 16460 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-13 15:53:10.798 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-13 15:53:10.800 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 15:56:49.605 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 1260 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-13 15:56:49.608 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-13 15:56:49.610 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 15:57:30.185 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 44.978 seconds (process running for 48.182)
+2025-05-13 16:04:31.426 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:04:31.438 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:04:32.180 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@2e40b40f, com.example.lost_found_item_service.model.LostFoundItemModel@18aa28d3]
+2025-05-13 16:04:32.181 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:04:41.194 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long)
+2025-05-13 16:04:41.196 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long)
+2025-05-13 16:04:41.295 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long) returned [com.example.lost_found_item_service.model.LostFoundItemModel@2b06272a, com.example.lost_found_item_service.model.LostFoundItemModel@119bf830]
+2025-05-13 16:04:41.296 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listOwnerLostItems(Long)
+2025-05-13 16:06:09.116 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - >> Start: Optional com.example.lost_found_item_service.service.LostFoundItemService.getItem(Long)
+2025-05-13 16:06:09.116 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - Entering: Optional com.example.lost_found_item_service.service.LostFoundItemService.getItem(Long)
+2025-05-13 16:06:09.153 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - Exiting: Optional com.example.lost_found_item_service.service.LostFoundItemService.getItem(Long) returned Optional[com.example.lost_found_item_service.model.LostFoundItemModel@21eb418]
+2025-05-13 16:06:09.153 [http-nio-8082-exec-7] INFO  c.e.l.aspect.LostItemLogging - << End: Optional com.example.lost_found_item_service.service.LostFoundItemService.getItem(Long)
+2025-05-13 16:06:19.725 [http-nio-8082-exec-8] INFO  c.e.l.aspect.LostItemLogging - >> Start: boolean com.example.lost_found_item_service.service.LostFoundItemService.updateItem(Long)
+2025-05-13 16:06:19.726 [http-nio-8082-exec-8] INFO  c.e.l.aspect.LostItemLogging - Entering: boolean com.example.lost_found_item_service.service.LostFoundItemService.updateItem(Long)
+2025-05-13 16:06:29.581 [http-nio-8082-exec-10] INFO  c.e.l.aspect.LostItemLogging - >> Start: boolean com.example.lost_found_item_service.service.LostFoundItemService.updateItem(Long)
+2025-05-13 16:06:29.583 [http-nio-8082-exec-10] INFO  c.e.l.aspect.LostItemLogging - Entering: boolean com.example.lost_found_item_service.service.LostFoundItemService.updateItem(Long)
+2025-05-13 16:06:29.736 [http-nio-8082-exec-10] INFO  c.e.l.aspect.LostItemLogging - Exiting: boolean com.example.lost_found_item_service.service.LostFoundItemService.updateItem(Long) returned true
+2025-05-13 16:06:29.737 [http-nio-8082-exec-10] INFO  c.e.l.aspect.LostItemLogging - << End: boolean com.example.lost_found_item_service.service.LostFoundItemService.updateItem(Long)
+2025-05-13 16:32:52.561 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 8288 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-13 16:32:52.564 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-13 16:32:52.565 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 16:33:26.795 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 38.941 seconds (process running for 42.325)
+2025-05-13 16:34:21.688 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:34:21.693 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:34:22.334 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@289992c4, com.example.lost_found_item_service.model.LostFoundItemModel@4579e658]
+2025-05-13 16:34:22.335 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:35:10.992 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - >> Start: void com.example.lost_found_item_service.service.LostFoundItemService.addItem(AddItemDto,Long)
+2025-05-13 16:35:10.993 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - Entering: void com.example.lost_found_item_service.service.LostFoundItemService.addItem(AddItemDto,Long)
+2025-05-13 16:35:11.353 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - Exiting: void com.example.lost_found_item_service.service.LostFoundItemService.addItem(AddItemDto,Long) returned null
+2025-05-13 16:35:11.354 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - << End: void com.example.lost_found_item_service.service.LostFoundItemService.addItem(AddItemDto,Long)
+2025-05-13 16:35:37.510 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:35:37.510 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:35:37.547 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@66e81ef3, com.example.lost_found_item_service.model.LostFoundItemModel@1422f54b, com.example.lost_found_item_service.model.LostFoundItemModel@5c8b5e9a]
+2025-05-13 16:35:37.547 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:36:36.852 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - >> Start: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:36:36.853 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - Entering: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:36:39.619 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - Exiting: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long) returned true
+2025-05-13 16:36:39.619 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - << End: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:37:00.476 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:37:00.476 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:37:00.492 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@4d9f4bae, com.example.lost_found_item_service.model.LostFoundItemModel@2bb90d72, com.example.lost_found_item_service.model.LostFoundItemModel@1b4b06e]
+2025-05-13 16:37:00.493 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:40:23.506 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 19448 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-13 16:40:23.509 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-13 16:40:23.510 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 16:40:58.185 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 39.142 seconds (process running for 42.246)
+2025-05-13 16:41:08.664 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:41:08.671 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:41:09.878 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@2ad8e2ab, com.example.lost_found_item_service.model.LostFoundItemModel@615c4e22, com.example.lost_found_item_service.model.LostFoundItemModel@1eeaf1a6]
+2025-05-13 16:41:09.879 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:41:25.726 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - >> Start: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:41:25.727 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - Entering: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:41:28.146 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - Exiting: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long) returned true
+2025-05-13 16:41:28.146 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - << End: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:41:37.242 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:41:37.242 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:41:37.259 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@122925e, com.example.lost_found_item_service.model.LostFoundItemModel@c4bf67f, com.example.lost_found_item_service.model.LostFoundItemModel@74d8c0]
+2025-05-13 16:41:37.259 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:44:48.484 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 18892 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-13 16:44:48.487 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-13 16:44:48.489 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 16:45:25.937 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 41.969 seconds (process running for 45.332)
+2025-05-13 16:46:12.562 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:46:12.566 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:46:13.161 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@74a3afd, com.example.lost_found_item_service.model.LostFoundItemModel@3300c528, com.example.lost_found_item_service.model.LostFoundItemModel@49921784]
+2025-05-13 16:46:13.161 [http-nio-8082-exec-2] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:46:21.719 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - >> Start: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:46:21.719 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - Entering: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:46:24.277 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - Exiting: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long) returned true
+2025-05-13 16:46:24.277 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - << End: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:46:29.167 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:46:29.168 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:46:29.184 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@6d5cc998, com.example.lost_found_item_service.model.LostFoundItemModel@5776054d, com.example.lost_found_item_service.model.LostFoundItemModel@322a3c6f]
+2025-05-13 16:46:29.184 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:51:28.796 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 18128 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-13 16:51:28.800 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-13 16:51:28.801 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 16:52:09.745 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 45.234 seconds (process running for 48.397)
+2025-05-13 16:52:15.942 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listPendingItems()
+2025-05-13 16:52:15.949 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listPendingItems()
+2025-05-13 16:52:16.629 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listPendingItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@6e150401]
+2025-05-13 16:52:16.630 [http-nio-8082-exec-1] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listPendingItems()
+2025-05-13 16:52:22.609 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:52:22.610 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:52:22.623 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@4a021051]
+2025-05-13 16:52:22.623 [http-nio-8082-exec-3] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:52:47.640 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - >> Start: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:52:47.641 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - Entering: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:52:50.525 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - Exiting: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long) returned true
+2025-05-13 16:52:50.525 [http-nio-8082-exec-4] INFO  c.e.l.aspect.LostItemLogging - << End: boolean com.example.lost_found_item_service.service.LostFoundItemService.approveOrRejectReport(boolean,Long)
+2025-05-13 16:52:56.152 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:52:56.152 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:52:56.160 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@6ba41c04]
+2025-05-13 16:52:56.161 [http-nio-8082-exec-5] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 16:53:00.093 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listPendingItems()
+2025-05-13 16:53:00.094 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listPendingItems()
+2025-05-13 16:53:00.099 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listPendingItems() returned []
+2025-05-13 16:53:00.100 [http-nio-8082-exec-6] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listPendingItems()
+2025-05-13 17:46:58.621 [http-nio-8082-exec-9] INFO  c.e.l.aspect.LostItemLogging - >> Start: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 17:46:58.625 [http-nio-8082-exec-9] INFO  c.e.l.aspect.LostItemLogging - Entering: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 17:46:58.735 [http-nio-8082-exec-9] INFO  c.e.l.aspect.LostItemLogging - Exiting: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems() returned [com.example.lost_found_item_service.model.LostFoundItemModel@2a4c24dc]
+2025-05-13 17:46:58.735 [http-nio-8082-exec-9] INFO  c.e.l.aspect.LostItemLogging - << End: List com.example.lost_found_item_service.service.LostFoundItemService.listAllItems()
+2025-05-13 17:47:14.301 [http-nio-8082-exec-10] INFO  c.e.l.aspect.LostItemLogging - >> Start: Optional com.example.lost_found_item_service.service.LostFoundItemService.getItem(Long)
+2025-05-13 17:47:14.302 [http-nio-8082-exec-10] INFO  c.e.l.aspect.LostItemLogging - Entering: Optional com.example.lost_found_item_service.service.LostFoundItemService.getItem(Long)
+2025-05-13 17:47:14.338 [http-nio-8082-exec-10] INFO  c.e.l.aspect.LostItemLogging - Exiting: Optional com.example.lost_found_item_service.service.LostFoundItemService.getItem(Long) returned Optional[com.example.lost_found_item_service.model.LostFoundItemModel@2976e3ce]
+2025-05-13 17:47:14.340 [http-nio-8082-exec-10] INFO  c.e.l.aspect.LostItemLogging - << End: Optional com.example.lost_found_item_service.service.LostFoundItemService.getItem(Long)
+2025-05-13 18:43:39.879 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 10048 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-13 18:43:39.881 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-13 18:43:39.883 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 18:44:15.748 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 40.869 seconds (process running for 44.546)
+2025-05-13 18:55:08.235 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Starting LostFoundItemServiceApplication using Java 21.0.7 with PID 14112 (E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices\lost-found-item-service\target\classes started by andrew in E:\Study\Level 3\Second term\SW_2\lost-found-system\microservices)
+2025-05-13 18:55:08.239 [restartedMain] DEBUG c.e.l.LostFoundItemServiceApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-13 18:55:08.240 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 18:55:46.560 [restartedMain] INFO  c.e.l.LostFoundItemServiceApplication - Started LostFoundItemServiceApplication in 43.701 seconds (process running for 47.38)

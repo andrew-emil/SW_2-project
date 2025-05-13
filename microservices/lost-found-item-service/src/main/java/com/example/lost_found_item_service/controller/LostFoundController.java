@@ -1,6 +1,7 @@
 package com.example.lost_found_item_service.controller;
 
 import com.example.lost_found_item_service.dtos.AddItemDto;
+import com.example.lost_found_item_service.dtos.ApproveOrRejectDto;
 import com.example.lost_found_item_service.model.LostFoundItemModel;
 import com.example.lost_found_item_service.service.LostFoundItemService;
 import lombok.RequiredArgsConstructor;
@@ -21,6 +22,11 @@ public class LostFoundController {
     @GetMapping
     public ResponseEntity<List<LostFoundItemModel>> listAllItems(){
         return ResponseEntity.ok(service.listAllItems());
+    }
+
+    @GetMapping("/pending")
+    public ResponseEntity<List<LostFoundItemModel>> listPendingItems(){
+        return ResponseEntity.ok(service.listPendingItems());
     }
 
     @PostMapping
@@ -50,5 +56,19 @@ public class LostFoundController {
     public ResponseEntity<String> deleteItem(@PathVariable Long itemId){
         service.deleteItem(itemId);
         return ResponseEntity.ok("Item Deleted Successfully");
+    }
+
+    @PatchMapping("/{itemId}")
+    public ResponseEntity<?> approveOrRejectReport(@RequestBody ApproveOrRejectDto dto, @PathVariable Long itemId){
+        boolean isApproved = dto.isApproved();
+        System.out.println(isApproved);
+        boolean result = service.approveOrRejectReport(isApproved, itemId);
+        String message = isApproved ?
+                "Report Approved successfully" :
+                "Report Rejected successfully";
+        if(result){
+            return ResponseEntity.ok(message);
+        }
+        return ResponseEntity.badRequest().body("Report Either Approved or Rejected");
     }
 }

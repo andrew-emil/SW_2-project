@@ -1,6 +1,5 @@
 package com.example.lost_found_item_service.aspect;
 
-import com.example.user_service.logging.LoggingAspect;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;

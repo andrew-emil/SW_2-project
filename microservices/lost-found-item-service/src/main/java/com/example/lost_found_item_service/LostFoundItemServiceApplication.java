@@ -12,7 +12,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 				ManagementWebSecurityAutoConfiguration.class
 		}
 )
-@EnableAspectJAutoProxy
+//@EnableAspectJAutoProxy
 public final class LostFoundItemServiceApplication {
 
     public static void main(String[] args) {

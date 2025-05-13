@@ -15,7 +15,7 @@ spring:
     allow-bean-definition-overriding: true
 
   datasource:
-    url: jdbc:mysql://localhost:3306/lost_found
+    url: jdbc:mysql://localhost:3306/lost&found
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver

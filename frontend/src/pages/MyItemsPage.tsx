@@ -2,19 +2,18 @@
 import  { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import Cookies from "js-cookie";
 import Sidebar from "../components/Sidebar";
 import type { LostFoundItem } from "../types/LostFoundItem";
+import { useAuth } from "../context/contextProvider";
 
 export default function MyItemsPage(){
 	const navigate = useNavigate();
-	const user = Cookies.get("user");
-	
-	useEffect(() => {
-		if (!user) {
-			navigate("/login");
-		}
-	}, [navigate, user]);
+	const { user } = useAuth();
+		useEffect(() => {
+			if (!user) {
+				navigate("/login");
+			}
+		}, [navigate, user]);
 
     const apiUrl = import.meta.env.VITE_LOST_FOUND_API as string;
 
@@ -26,7 +25,7 @@ export default function MyItemsPage(){
 		const fetchItems = async () => {
 			try {
 				const resp = await axios.get<LostFoundItem[]>(
-					`${apiUrl}/${user.id}`
+					`${apiUrl}/${user?.id}`
 				);
 				setItems(resp.data);
 			} catch (err: any) {
@@ -38,7 +37,7 @@ export default function MyItemsPage(){
 			}
 		};
 		fetchItems();
-	}, [apiUrl, user.id]);
+	}, [apiUrl, user?.id]);
 
 	const handleDelete = async (id: number) => {
 		if (!window.confirm("Are you sure you want to delete this item?")) return;
@@ -69,7 +68,7 @@ export default function MyItemsPage(){
 
 	return (
 		<div className="d-flex">
-			<Sidebar />
+			<Sidebar username={user?.username} role={user?.role} />
 
 			<div className="col px-4 py-3 w-100">
 				<h4 className="text-center p-2 m-3">My Items</h4>

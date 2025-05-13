@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import Sidebar from "../components/Sidebar";
 import { Link, useNavigate } from "react-router-dom";
-import Cookies from "js-cookie";
 import type { LostFoundItem } from "../types/LostFoundItem";
+import { useAuth } from "../context/contextProvider";
 
 function Home() {
 	const navigate = useNavigate();
-	const user = Cookies.get("user");
+	const { user } = useAuth();
 	useEffect(() => {
 		if (!user) {
 			navigate("/login");
@@ -21,7 +21,7 @@ function Home() {
 		const fetchItems = async () => {
 			const apiUrl = import.meta.env.VITE_LOST_FOUND_API as string;
 			try {
-				const res = await fetch(`${apiUrl}/lostfound/${user.id}`);
+				const res = await fetch(`${apiUrl}/lostfound/${user?.id}`);
 				if (!res.ok) throw new Error(`Server error: ${res.status}`);
 				const data: LostFoundItem[] = await res.json();
 				setItems(data);
@@ -40,7 +40,7 @@ function Home() {
 	return (
 		<div className="container-fluid">
 			<div className="row flex-nowrap">
-				<Sidebar />
+				<Sidebar username={user?.username} role={user?.role}/>
 
 				<div className="container-fluid" id="main">
 					<div className="row">

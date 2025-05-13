@@ -4,18 +4,18 @@ import axios from "axios";
 import Sidebar from "../components/Sidebar";
 import type { LostFoundItem } from "../types/LostFoundItem";
 import { useNavigate } from "react-router-dom";
-import Cookies from "js-cookie";
+import { useAuth } from "../context/contextProvider";
 
 export default function ReportFormPage() {
 	const navigate = useNavigate();
-    const user = Cookies.get("user");
+	const { user } = useAuth();
 	useEffect(() => {
 		if (!user) {
 			navigate("/login");
 		}
 	}, [navigate, user]);
 
-    const apiUrl = import.meta.env.VITE_LOST_FOUND_API as string;
+	const apiUrl = import.meta.env.VITE_LOST_FOUND_API as string;
 
 	const [form, setForm] = useState<{
 		type: "LOST" | "FOUND";
@@ -50,7 +50,7 @@ export default function ReportFormPage() {
 		setSuccess(false);
 
 		try {
-			await axios.post<LostFoundItem>(`${apiUrl}?userId=${user.id}`, form);
+			await axios.post<LostFoundItem>(`${apiUrl}?userId=${user?.id}`, form);
 			setSuccess(true);
 
 			setForm((prev) => ({
@@ -70,7 +70,7 @@ export default function ReportFormPage() {
 
 	return (
 		<div className="d-flex">
-			<Sidebar />
+			<Sidebar username={user?.username} role={user?.role} />
 
 			<div className="col px-4 py-3 w-100">
 				<h5 className="text-center p-2 m-3">Report Form</h5>

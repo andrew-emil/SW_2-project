@@ -2,6 +2,7 @@ package com.example.user_service.controllers;
 
 import com.example.user_service.dtos.LoginDto;
 import com.example.user_service.dtos.RegisterDto;
+import com.example.user_service.dtos.UserDataDto;
 import com.example.user_service.service.AuthService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,7 +55,11 @@ public class AuthController {
         }
         try{
             String token = authService.login(loginDto);
-            return ResponseEntity.ok().body(Map.of("token", token));
+            UserDataDto userData = authService.getUserData(loginDto.getEmail());
+            return ResponseEntity.ok().body(Map.of(
+                    "token", token,
+                    "user", userData
+            ));
         }catch (BadCredentialsException e){
             return ResponseEntity.badRequest().body("Invalid credentials");
         }

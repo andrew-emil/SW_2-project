@@ -1,12 +1,20 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import type { RoleEnum } from "../types/RoleEnum";
 
-function Sidebar() {
+interface SidebarProps {
+	username: string | undefined;
+	role: RoleEnum | undefined;
+}
+
+function Sidebar({ username, role }: SidebarProps) {
+	
 	return (
 		<div className="col-auto col-md-3 col-xl-2 px-sm-2" id="sidebar">
 			<div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-3 min-vh-100">
+				{/* Logo + App Name */}
 				<div
-					className="d-flex align-items-center pb-3 me-md-auto "
+					className="d-flex align-items-center pb-3 me-md-auto"
 					style={{ width: "100%" }}>
 					<img
 						className="img-fluid ms-2"
@@ -15,47 +23,52 @@ function Sidebar() {
 						width="40"
 						height="40"
 					/>
-					<span className="fs-5 d-none d-sm-inline ms-3">Lost & Found</span>
+					<span className="fs-5 d-none d-sm-inline ms-3">Lost &amp; Found</span>
 				</div>
+
+				{/* Display logged-in user */}
+				<div className="pb-3 w-100">
+					<strong className="d-none d-sm-inline">Hello, {username}!</strong>
+				</div>
+
+				{/* Navigation */}
 				<ul
 					className="nav nav-pills flex-column mb-sm-auto align-items-center align-items-sm-start"
 					id="menu">
 					<li className="nav-item">
 						<Link to="/" className="nav-link px-0 align-middle">
-							<i className="fs-4 bi bi-house-door"></i>{" "}
+							<i className="fs-4 bi bi-house-door"></i>
 							<span className="ms-1 d-none d-sm-inline">Home</span>
 						</Link>
 					</li>
 					<li>
-						<a
-							href="../LostFound/allLostFound.html"
-							className="nav-link px-0 align-middle">
-							<i className="fs-4 bi-list-ol"></i>{" "}
-							<span className="ms-1 d-none d-sm-inline">All Items</span>
-						</a>
+						<Link to="/user/items" className="nav-link px-0 align-middle">
+							<i className="fs-4 bi-list-ol"></i>
+							<span className="ms-1 d-none d-sm-inline">My Items</span>
+						</Link>
 					</li>
 					<li>
-						<a
-							href="../LostFound/lostFoundForm.html"
-							className="nav-link px-0 align-middle">
-							<i className="fs-4 bi-file-text"></i>{" "}
+						<Link to="/items/add" className="nav-link px-0 align-middle">
+							<i className="fs-4 bi-file-text"></i>
 							<span className="ms-1 d-none d-sm-inline">Report New Item</span>
-						</a>
+						</Link>
 					</li>
-					<li>
-						<a
-							href="../admin/allUsers.html"
-							className="nav-link px-0 align-middle">
-							<i className="fs-4 bi-people"></i>{" "}
-							<span className="ms-1 d-none d-sm-inline">User Management</span>{" "}
-						</a>
-					</li>
-					<li>
-						<a href="" className="nav-link px-0 align-middle">
-							<i className="fs-4 bi-box-arrow-right"></i>{" "}
-							<span className="ms-1 d-none d-sm-inline">Log Out</span>{" "}
-						</a>
-					</li>
+					{role === "ADMIN" && (
+						<li>
+							<Link to="/users" className="nav-link px-0 align-middle">
+								<i className="fs-4 bi-people"></i>
+								<span className="ms-1 d-none d-sm-inline">User Management</span>
+							</Link>
+						</li>
+					)}
+					{role === "ADMIN" && (
+						<li>
+							<Link to="/items" className="nav-link px-0 align-middle">
+								<i className="fs-4 bi-people"></i>
+								<span className="ms-1 d-none d-sm-inline">Pending Reports</span>
+							</Link>
+						</li>
+					)}
 				</ul>
 			</div>
 		</div>
