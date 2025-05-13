@@ -1,15 +1,15 @@
 import { useState, type FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
 import logo from "../assets/logo.png";
 import axios from "axios";
-import Cookies from "js-cookie";
+import { useAuth } from "../context/contextProvider";
 
 function Login() {
 	const [email, setEmail] = useState<string>("");
 	const [password, setPassword] = useState<string>("");
 	const [errorMsg, setErrorMsg] = useState<string>("");
 	const navigate = useNavigate();
+	const { setUser, setToken } = useAuth();
 
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
@@ -23,9 +23,10 @@ function Login() {
 			};
 			const { data } = await axios.post(`${apiUrl}/auth/login`, payload);
 
-			Cookies.set("user", data);
+			setToken(data.token)
+			setUser(data.user)
 
-			navigate("/")
+			navigate("/");
 			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		} catch (err: any) {
 			setErrorMsg(err.message || "Error in login");
@@ -34,7 +35,7 @@ function Login() {
 
 	return (
 		<div className="d-flex">
-			<Sidebar />
+			
 
 			<div className="d-flex flex-column align-items-center justify-content-center p-2 vh-100 w-100">
 				<div className="m-2 p-2 d-flex align-items-center">
@@ -57,7 +58,6 @@ function Login() {
 						{errorMsg && (
 							<div className="alert alert-danger text-center">{errorMsg}</div>
 						)}
-						
 
 						<form onSubmit={handleSubmit}>
 							<div className="mb-3">

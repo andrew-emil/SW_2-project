@@ -2,6 +2,7 @@ package com.example.lost_found_item_service.service;
 
 import com.example.lost_found_item_service.dtos.AddItemDto;
 import com.example.lost_found_item_service.enums.ItemType;
+import com.example.lost_found_item_service.enums.Status;
 import com.example.lost_found_item_service.model.LostFoundItemModel;
 import com.example.lost_found_item_service.repository.LostFoundItemRepository;
 import lombok.Builder;
@@ -20,7 +21,11 @@ public class LostFoundItemService {
     private LostFoundItemRepository lostFoundItemRepository;
 
     public List<LostFoundItemModel> listAllItems(){
-        return new ArrayList<>(lostFoundItemRepository.findAll());
+        return lostFoundItemRepository.findByStatus(Status.APPROVED);
+    }
+
+    public List<LostFoundItemModel> listPendingItems(){
+        return lostFoundItemRepository.findByStatus(Status.PENDING);
     }
 
     public void addItem(AddItemDto addItemDto, Long userId){
@@ -31,6 +36,7 @@ public class LostFoundItemService {
                 .lostFoundLocation(addItemDto.getLocation())
                 .category(addItemDto.getCategory())
                 .description(addItemDto.getDescription())
+                .status(Status.PENDING)
                 .userId(userId)
                 .build();
 
@@ -63,5 +69,26 @@ public class LostFoundItemService {
 
     public void deleteItem(Long id){
         lostFoundItemRepository.deleteById(id);
+    }
+
+    public boolean approveOrRejectReport(boolean isApproved, Long itemId){
+        boolean isExist = lostFoundItemRepository.existsById(itemId);
+        if(isExist){
+            lostFoundItemRepository.findById(itemId).map(
+                    item -> {
+                        if(item.getStatus() == Status.PENDING){
+                            if(isApproved){
+                                item.setStatus(Status.APPROVED);
+                            }else {
+                                item.setStatus(Status.REJECTED);
+                            }
+
+                            return lostFoundItemRepository.save(item);
+                        }
+                        throw new IllegalStateException("Item is already marked as FOUND");
+                    }
+            );
+        }
+        return isExist;
     }
 }

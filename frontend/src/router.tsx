@@ -1,5 +1,5 @@
-import { createBrowserRouter } from "react-router-dom";
-import App from "./App";
+import { createBrowserRouter, Outlet } from "react-router-dom";
+// import App from "./App";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
@@ -8,11 +8,19 @@ import LostFoundListPage from "./pages/LostFoundListPage";
 import ItemDetailPage from "./pages/ItemDetailPage";
 import ReportFormPage from "./pages/ReportFormPage";
 import MyItemsPage from "./pages/MyItemsPage";
+import { AuthProvider } from "./context/contextProvider";
+
+// eslint-disable-next-line react-refresh/only-export-components
+const AuthLayout = () => (
+	<AuthProvider>
+		<Outlet />
+	</AuthProvider>
+);
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <App />,
+		element: <AuthLayout />,
 		children: [
 			{ path: "/login", element: <Login /> },
 			{ path: "/register", element: <Register /> },

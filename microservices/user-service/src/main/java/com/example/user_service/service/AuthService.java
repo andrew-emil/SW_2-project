@@ -2,12 +2,12 @@ package com.example.user_service.service;
 
 import com.example.user_service.dtos.LoginDto;
 import com.example.user_service.dtos.RegisterDto;
+import com.example.user_service.dtos.UserDataDto;
 import com.example.user_service.enums.Role;
 import com.example.user_service.models.User;
 import com.example.user_service.repository.UserRepository;
 import com.example.user_service.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -18,13 +18,9 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class AuthService {
-    @Autowired
     private final UserRepository userRepository;
-    @Autowired
     private final PasswordEncoder passwordEncoder;
-    @Autowired
     private final CustomUserDetailsService customUserDetailsService;
-    @Autowired
     private final JwtUtil jwtUtil;
 
 
@@ -47,5 +43,18 @@ public class AuthService {
 
         UserDetails userDetails = customUserDetailsService.loadUserByUsername(loginDto.getEmail());
         return jwtUtil.generateToken(userDetails);
+    }
+
+
+    public UserDataDto getUserData(String email){
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new BadCredentialsException("Invalid credentials"));
+
+        return new UserDataDto(
+                user.getId(),
+                user.getUsername(),
+                user.getRole()
+        );
+
     }
 }

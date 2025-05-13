@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Sidebar from "../components/Sidebar";
 import { useNavigate } from "react-router-dom";
-import Cookies from "js-cookie";
+import { useAuth } from "../context/contextProvider";
 
 interface User {
 	id: number;
@@ -15,10 +15,13 @@ interface User {
 
 export default function UsersPage() {
 	const navigate = useNavigate();
-	const user = Cookies.get("user");
+	const { user, token } = useAuth();
 	useEffect(() => {
 		if (!user) {
 			navigate("/login");
+		}
+		if (user?.role !== "ADMIN") {
+			navigate("/");
 		}
 	}, [navigate, user]);
 
@@ -30,7 +33,11 @@ export default function UsersPage() {
 	useEffect(() => {
 		const fetchUsers = async () => {
 			try {
-				const response = await axios.get<User[]>(`${apiUrl}/users`);
+				const response = await axios.get<User[]>(`${apiUrl}/users`, {
+					headers: {
+						Authorization: `Bearer ${token}`,
+					},
+				});
 				setUsers(response.data);
 			} catch (err: any) {
 				setError(
@@ -42,12 +49,16 @@ export default function UsersPage() {
 		};
 
 		fetchUsers();
-	}, [apiUrl]);
+	}, [apiUrl, token]);
 
 	const handleDelete = async (id: number) => {
 		if (!window.confirm("Delete this user?")) return;
 		try {
-			await axios.delete(`${apiUrl}/users/${id}`);
+			await axios.delete(`${apiUrl}/users/${id}`, {
+				headers: {
+					Authorization: `Bearer ${token}`,
+				},
+			});
 			setUsers((prev) => prev.filter((u) => u.id !== id));
 		} catch (err: any) {
 			alert(
@@ -58,7 +69,7 @@ export default function UsersPage() {
 
 	return (
 		<div className="d-flex">
-			<Sidebar />
+			<Sidebar username={user?.username} role={user?.role} />
 
 			<div className="col px-4 py-3 w-100">
 				<h4 className="text-center p-2 m-3 h-color">User Management</h4>
@@ -66,7 +77,7 @@ export default function UsersPage() {
 				{loading && <p className="text-center">Loading users…</p>}
 				{error && <div className="alert alert-danger text-center">{error}</div>}
 
-				{!loading && !error && (
+				{!loading && !error && users.length == 0 && (
 					<div className="table-responsive">
 						<table className="table table-hover text-wrap">
 							<thead>

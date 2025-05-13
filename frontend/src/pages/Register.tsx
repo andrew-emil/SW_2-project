@@ -1,7 +1,7 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
 import { Link } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
 import axios from "axios";
+import logo from "../assets/logo.png"
 
 interface FormState {
 	username: string;
@@ -42,23 +42,22 @@ function Register() {
 				password: form.password,
 			};
 
-			const { data } = await axios.post(`${apiUrl}/auth/register`, payload);
-			setSuccess(data);
+			await axios.post(`${apiUrl}/auth/register`, payload);
+			setSuccess("Register successful<br/>Login to access all the features");
 			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		} catch (err: any) {
 			setError(err.message || "unKnwon Error");
+			console.log(err)
 		}
 	};
 
 	return (
 		<div className="d-flex">
-			<Sidebar />
-
 			<div className="d-flex flex-column align-items-center justify-content-center p-2 vh-100 w-100">
 				<div className="m-2 p-2 d-flex align-items-center">
 					<img
 						className="img-fluid"
-						src="/images/logo.png"
+						src={logo}
 						alt="Logo"
 						width={45}
 						height={25}

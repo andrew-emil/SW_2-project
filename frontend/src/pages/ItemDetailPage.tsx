@@ -5,16 +5,16 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Sidebar from "../components/Sidebar";
 import type { LostFoundItem } from "../types/LostFoundItem";
-import Cookies from "js-cookie";
+import { useAuth } from "../context/contextProvider";
 
 export default function ItemDetailPage() {
 	const navigate = useNavigate();
-	const user = Cookies.get("user");
-	useEffect(() => {
-		if (!user) {
-			navigate("/login");
-		}
-	}, [navigate, user]);
+		const { user } = useAuth();
+		useEffect(() => {
+			if (!user) {
+				navigate("/login");
+			}
+		}, [navigate, user]);
 
 	const { id } = useParams<{ id: string }>();
 	const [item, setItem] = useState<LostFoundItem | null>(null);
@@ -46,7 +46,7 @@ export default function ItemDetailPage() {
 
 	return (
 		<div className="d-flex">
-			<Sidebar />
+			<Sidebar username={user?.username} role={user?.role} />
 
 			<div className="col px-4 py-3 w-100">
 				{loading && <p className="text-center">Loading item…</p>}

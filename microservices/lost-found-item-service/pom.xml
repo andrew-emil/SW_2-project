@@ -109,10 +109,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.example</groupId>
-			<artifactId>user-service</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<scope>compile</scope>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 
 	</dependencies>

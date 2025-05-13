@@ -2,6 +2,7 @@ package com.example.lost_found_item_service.model;
 
 import com.example.lost_found_item_service.enums.Category;
 import com.example.lost_found_item_service.enums.ItemType;
+import com.example.lost_found_item_service.enums.Status;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -36,6 +37,9 @@ public class LostFoundItemModel {
 
     @Column(name = "description")
     private String description;
+
+    @Column(name = "status")
+    private Status status;
 
     @Column(name = "user_id", nullable = false)
     private Long userId;

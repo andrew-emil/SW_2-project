@@ -2,28 +2,32 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import Cookies from "js-cookie";
 import Sidebar from "../components/Sidebar";
 import type { LostFoundItem } from "../types/LostFoundItem";
+import { useAuth } from "../context/contextProvider";
 
 export default function LostFoundListPage() {
 	const navigate = useNavigate();
-	const user = Cookies.get("user");
+	const { user } = useAuth();
 	useEffect(() => {
 		if (!user) {
 			navigate("/login");
 		}
+		if (user?.role !== "ADMIN") {
+			navigate("/");
+		}
 	}, [navigate, user]);
 
-    const apiUrl = import.meta.env.VITE_LOST_FOUND_API as string;
+	const apiUrl = import.meta.env.VITE_LOST_FOUND_API as string;
 	const [items, setItems] = useState<LostFoundItem[]>([]);
 	const [loading, setLoading] = useState<boolean>(true);
 	const [error, setError] = useState<string | null>(null);
+	const [success, setSuccess] = useState<string>("");
 
 	useEffect(() => {
 		const fetchItems = async () => {
 			try {
-				const resp = await axios.get<LostFoundItem[]>(apiUrl);
+				const resp = await axios.get<LostFoundItem[]>(`${apiUrl}/pending`);
 				setItems(resp.data);
 			} catch (err: any) {
 				setError(
@@ -36,11 +40,13 @@ export default function LostFoundListPage() {
 		fetchItems();
 	}, [apiUrl]);
 
-	const handleDelete = async (id: number) => {
-		if (!window.confirm("Are you sure you want to delete this item?")) return;
+	const onApproveOrReject = async (id: number, isApproved: boolean) => {
 		try {
-			await axios.delete(`${apiUrl}/${id}`);
+			const { data } = await axios.patch(`${apiUrl}/${id}`, {
+				isApproved,
+			});
 			setItems((prev) => prev.filter((item) => item.id !== id));
+			setSuccess(data);
 		} catch (err: any) {
 			alert(
 				err.response?.data?.message || err.message || "Failed to delete item"
@@ -50,10 +56,12 @@ export default function LostFoundListPage() {
 
 	return (
 		<div className="d-flex">
-			<Sidebar />
+			<Sidebar username={user?.username} role={user?.role} />
 
 			<div className="col px-4 py-3 w-100">
-				<h5 className="text-center p-2 m-3">All Lost/Found Reported Items</h5>
+				<h5 className="text-center p-2 m-3">
+					All Lost/Found Pending Reported Items
+				</h5>
 				<div className="pb-4">
 					<Link to="/report" className="btn btn-sm me-2">
 						Report New Item
@@ -62,6 +70,9 @@ export default function LostFoundListPage() {
 
 				{loading && <p className="text-center">Loading items…</p>}
 				{error && <div className="alert alert-danger text-center">{error}</div>}
+				{success && (
+					<div className="alert alert-success text-center">{success}</div>
+				)}
 
 				{!loading && !error && (
 					<div className="table-responsive">
@@ -88,15 +99,13 @@ export default function LostFoundListPage() {
 											</td>
 											<td>{item.lostFoundLocation}</td>
 											<td className="d-flex justify-content-center">
-												<Link
-													to={`/items/${item.id}`}
-													className="btn-sm icons me-2">
-													<i className="bi bi-eye text-primary" />
-												</Link>
 												<button
-													className="btn-sm icons border-0 bg-transparent"
-													onClick={() => handleDelete(item.id)}>
-													<i className="bi bi-trash3 text-danger" />
+													onClick={() => onApproveOrReject(item.id, true)}>
+													Approve
+												</button>
+												<button
+													onClick={() => onApproveOrReject(item.id, false)}>
+													Reject
 												</button>
 											</td>
 										</tr>
